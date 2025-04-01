@@ -1,0 +1,49 @@
+:root {
+  --Green500: hsl(158, 36%, 37%);
+  --Green700: hsl(158, 42%, 18%);
+
+  --Black: hsl(212, 21%, 14%);
+  --Grey: hsl(228, 12%, 48%);
+  --Cream: hsl(30, 38%, 92%);
+  --White: hsl(0, 0%, 100%);
+
+  --Font-paragraph: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Cream);
+  font-size: 62.5%;
+  display: grid;
+  grid-template-areas: "." "hero" "footer";
+  grid-template-rows: 20vh 1fr 20vh;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.hero {
+  grid-area: hero;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50rem;
+  background-color: var(--White);
+}
+
+.attribution {
+  grid-area: footer;
+  font-size: 11px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
