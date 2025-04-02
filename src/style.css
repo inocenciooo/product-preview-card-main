@@ -22,8 +22,8 @@ body {
   background-color: var(--Cream);
   font-size: 62.5%;
   display: grid;
-  grid-template-areas: "." "hero" "footer";
-  grid-template-rows: 20vh 1fr 20vh;
+  grid-template-areas: "." "global" "footer";
+  grid-template-rows: 20vh 80vh 1fr;
   font-family: Montserrat;
   font-size: 1.4rem;
 }
@@ -32,8 +32,11 @@ img {
   display: block;
   border-radius: .6rem 0 0 .6rem;
 }
+
+.global{
+  grid-area: global;
+}
 .hero {
-  grid-area: hero;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -42,6 +45,8 @@ img {
   border-radius: 0.6rem;
   color: var(--Grey);
 }
+
+
 .hero .perfume-informations {
   padding: 2rem;
   display: flex;
@@ -79,7 +84,6 @@ img {
   padding-bottom: 0.6rem;
 }
 
-
 .hero .perfume-informations .cart-button{
   text-align: center;
   color: var(--White);
@@ -94,8 +98,6 @@ img {
   gap: .5rem;
   cursor: pointer;
 }
-
-
 
 .attribution {
   grid-area: footer;

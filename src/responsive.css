@@ -1,0 +1,11 @@
+/* EM PROCESSSAMENTO
+
+@media (max-width: 900px){
+    .hero{
+        grid-template-areas: "image" "informations";
+        grid-template-rows: 1fr 2fr;
+        grid-column: 1fr;
+    }
+}
+
+*/
