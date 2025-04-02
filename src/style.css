@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   --Green500: hsl(158, 36%, 37%);
   --Green700: hsl(158, 42%, 18%);
@@ -22,10 +24,13 @@ body {
   display: grid;
   grid-template-areas: "." "hero" "footer";
   grid-template-rows: 20vh 1fr 20vh;
+  font-family: Montserrat;
+  font-size: 1.4rem;
 }
 img {
   width: 100%;
   display: block;
+  border-radius: .6rem 0 0 .6rem;
 }
 .hero {
   grid-area: hero;
@@ -34,16 +39,74 @@ img {
   grid-template-columns: 1fr 1fr;
   width: 50rem;
   background-color: var(--White);
+  border-radius: 0.6rem;
+  color: var(--Grey);
 }
+.hero .perfume-informations {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero .perfume-informations > :nth-child(1) {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+.hero .perfume-informations h1 {
+  font-size: 3rem;
+  font-family: Fraunces;
+  color: var(--Black);
+  line-height: 3rem;
+}
+
+.hero .perfume-informations .value{
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.hero .perfume-informations .value  p:nth-child(1){
+  font-family: Fraunces;
+  font-weight: bold;
+  color: var(--Green500);
+  font-size: 2.2rem;
+}
+
+.hero .perfume-informations .value  p:nth-child(2){
+  text-decoration: line-through;
+  font-size: 1rem;
+  padding-bottom: 0.6rem;
+}
+
+
+.hero .perfume-informations .cart-button{
+  text-align: center;
+  color: var(--White);
+  background-color: var(--Green500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  border-radius: .7rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  gap: .5rem;
+  cursor: pointer;
+}
+
+
 
 .attribution {
   grid-area: footer;
-  font-size: 11px;
+  font-size: 1rem;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  font-size: 1rem;
+  color: var(--Green700);
+  font-weight: bold;
 }
