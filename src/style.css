@@ -108,7 +108,6 @@ img {
   align-items: flex-end;
 }
 .attribution a {
-  font-size: 1rem;
   color: var(--Green700);
   font-weight: bold;
 }

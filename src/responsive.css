@@ -1,11 +1,30 @@
-/* EM PROCESSSAMENTO
-
-@media (max-width: 900px){
-    .hero{
-        grid-template-areas: "image" "informations";
-        grid-template-rows: 1fr 2fr;
-        grid-column: 1fr;
+@media (max-width: 900px) {
+    html{
+        height: 100vh;
     }
-}
+  body {
+    grid-template-areas: "." "global" "footer";
+    grid-template-rows: 10vh 1fr 10vh;
+  }
 
-*/
+  img {
+    border-radius: .6rem .6rem 0 0;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .hero .perfume-informations {
+    gap: 1.5rem;
+  }
+
+  .hero .perfume-informations p{
+    font-size: 3.28vw;
+  }
+  .hero .perfume-informations h1 {
+    font-size: 7vw;
+    line-height: 6.5vw;
+  }
+}
